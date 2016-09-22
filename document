@@ -8,15 +8,18 @@
 		"autor":{"type":"array",
 			"items": {"type": string, "index": "not_analyzed"}
 		},
-		"taxon":{"type":"string", "index": "not_analyzed"},		
+		"desc": {"type":"string"),
+		"taxon":{"type":"array",
+			"items": {"type": string, "index": "not_analyzed"}
+		},		
 		"espaco":{"type":"array",
 			"items": {"type": string, "index": "not_analyzed"}
 		},
 		"tema":{"type":"array",
 			"items": {"type": string, "index": "not_analyzed"}
 		},
-		"tempo": "taxon":{"type":"date"}
+		"tempo": {"type":"date"}
 		"url":{"type":"string"},
 	}
-	"required": ["titulo", "autor", "tempo", "url"]
+	"required": ["titulo", "url"]
 },
