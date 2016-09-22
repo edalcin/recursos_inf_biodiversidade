@@ -2,7 +2,7 @@
 
 Este projeto se destina a:
 
-1. definir uma estrutura minimalista e unificada capazes de indexar os diferentes recursos de informação em formato digial sobre biodiversidade, a saber:
+1. Definir uma estrutura minimalista e unificada capaz de indexar diferentes recursos de informação em formato digial sobre biodiversidade, a saber:
 
 * documentos (relatórios, dissertações, teses, publicações, livros, apresentações, páginas na Internet, etc), 
 * tabelas (dados estruturados, tabulados sob a forma de planilhas, arquivos de texto delimitados ou bancos de dados), 
@@ -10,8 +10,10 @@ Este projeto se destina a:
 * objetos em coleções científicas,
 * imagens, audio e vídeo
 
-(ver http://eduardo.dalc.in/uma-arquitetura-para-publicao-de-informaes-sobre-biodiversidade)
 
-2. 
 
-Esta estrutura é voltada para criação de uma ferramenta de busca integrada de acesso público baseada na ferramenta ElastiSearch.
+2. Implementar uma ferramenta de busca integrada a estes recursos, com base na ferramena ElasticSearch.
+
+
+## Links
+* http://eduardo.dalc.in/uma-arquitetura-para-publicao-de-informaes-sobre-biodiversidade
