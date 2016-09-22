@@ -1,6 +1,6 @@
 # Indexação de recursos de informação sobre biodiversidade
 
-Este projeto se destina a definir uma estrutura única de documentos capazes de indexar os diferentes recursos de informação sobre biodiversidade, a saber:
+Este projeto se destina a definir uma estrutura minimalista e unificada capazes de indexar os diferentes recursos de informação em formato digial sobre biodiversidade, a saber:
 
 * documentos (relatórios, dissertações, teses, publicações, livros, apresentações, páginas na Internet, etc), 
 * tabelas (dados estruturados, tabulados sob a forma de planilhas, arquivos de texto delimitados ou bancos de dados), 
