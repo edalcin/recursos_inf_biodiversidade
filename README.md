@@ -8,5 +8,6 @@ Este projeto se destina a definir uma estrutura minimalista e unificada capazes 
 * objetos em coleções científicas,
 * imagens, audio e vídeo
 
-
 (ver http://eduardo.dalc.in/uma-arquitetura-para-publicao-de-informaes-sobre-biodiversidade)
+
+Esta estrutura é voltada para criação de uma ferramenta de busca integrada de acesso público baseada na ferramenta ElastiSearch.
