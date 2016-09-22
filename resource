@@ -1,14 +1,16 @@
-# Document Profile
-## Recursos sobre documentos não estruturados
+# Resource profile
 
-"doc": {
+"recurso": {
 	"type": "object",
 	"properties": {
+		"tipo": {"type":"string", 
+			"index": "not_analyzed",
+			"enum" : ["doc","img","data","page","map","vid","som","col"]},
 		"titulo":{"type":"string", "index": "not_analyzed"},
 		"autor":{"type":"array",
 			"items": {"type": string, "index": "not_analyzed"}
 		},
-		"desc": {"type":"string"),
+		"descricao": {"type":"string"),
 		"taxon":{"type":"array",
 			"items": {"type": string, "index": "not_analyzed"}
 		},		
