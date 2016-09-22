@@ -10,7 +10,15 @@ Este projeto se destina a:
   * objetos em coleções científicas,
   * imagens, audio e vídeo
    
-* Implementar uma ferramenta de busca integrada a estes recursos, com base na ferramena ElasticSearch.
+* Implementar uma ferramenta de busca integrada a estes recursos, com base na ferramena ElasticSearch, composta de:
+- [ ] Servidor ElasticSearch
+- [ ] Formulário de registro de documentos
+- [ ] Página de Busca "google like"
+- [ ] Interface com CKan
+- [ ] Interface com DSpace
+- [ ] Interface com IPT
+- [ ] Interface com Geonode
+- [ ] Interface com ResourceSpace
 
 
 ## Links
