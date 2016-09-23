@@ -5,17 +5,18 @@ PUT recursos
   "mappings": {
     "recurso": { 
       "properties": { 
+        "tipo":     {"type": "string"}, 
         "titulo":   {"type": "string"}, 
-        "autor":    {"type": "string", "index": "not_analyzed"},         
-        "desc":     {"type": "string"  }, 
-        "taxon":    {"type": "string", "index": "not_analyzed"}, 
+        "autor":    {"type": "string"},         
+        "desc":     {"type": "string"}, 
+        "taxon":    {"type": "string"}, 
         "espaco":   { 
             "properties": 	{ 
         		"nome": {"type": "string"  },
         		"poli":  {"type": "geo_shape"  }
         			}
     		    }, 
-        "tema":     {"type": "string", "index": "not_analyzed"},         
+        "tema":     {"type": "string"},         
         "tempo":    { 
             	"properties": 	{ 
         		"data": {"type": "date"  },
@@ -27,6 +28,3 @@ PUT recursos
     }
   }
 }
-  }
-}
-
