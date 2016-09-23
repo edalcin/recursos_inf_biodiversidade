@@ -1,8 +1,8 @@
-# Indexação e busca de recursos de informação sobre biodiversidade
+# Indexação e busca de metadados de recursos de informação sobre biodiversidade
 
 Este projeto se destina a:
 
-* Definir uma estrutura minimalista e unificada, expressa em JSON, capaz de indexar diferentes recursos de informação em formato digial sobre biodiversidade, a saber:
+* Definir uma estrutura minimalista e unificada capaz de indexar metadados de diferentes recursos de informação em formato digial sobre biodiversidade, a saber:
 
   * documentos (relatórios, dissertações, teses, publicações, livros, apresentações, páginas na Internet, etc), 
   * tabelas (dados estruturados, tabulados sob a forma de planilhas, arquivos de texto delimitados ou bancos de dados), 
