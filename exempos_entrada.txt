@@ -1,0 +1,8 @@
+## Exemplos
+
+POST /recursos/recurso/
+{
+               "taxon": ["Vriesea altimontana","Bromeliaceae"],
+               "espaco": {"nome": "Rio de Janeiro"},
+               "url": "http://servicos.jbrj.gov.br/flora/search/vriesea altimontana"
+}
