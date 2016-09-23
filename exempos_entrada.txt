@@ -2,7 +2,44 @@
 
 POST /recursos/recurso/
 {
-               "taxon": ["Vriesea altimontana","Bromeliaceae"],
-               "espaco": {"nome": "Rio de Janeiro"},
-               "url": "http://servicos.jbrj.gov.br/flora/search/vriesea altimontana"
+    "tipo":  ["Perfil", "Documento"],
+    "taxon": ["Vriesea altimontana","Bromeliaceae"],
+    "espaco": {"nome": "Rio de Janeiro"},
+    "url": "http://servicos.jbrj.gov.br/flora/search/vriesea altimontana"
+}
+
+
+POST /recursos/recurso
+{
+    "tipo":  ["Perfil", "Documento"],
+    "taxon": ["Vriesea monacorum", "Bromeliaceae"],
+    "espaco": {"nome": "Minas Gerais"},
+    "url": "http://cncflora.jbrj.gov.br/portal/pt-br/profile/Vriesea%20monacorum"
+}
+
+POST /recursos/recurso/
+{
+    "tipo": "Documento",
+    "titulo": "Plano de Ação Nacional para a conservação da flora ameaçada de extinção da região de Grão Mogol Francisco Sá",
+    "autor":[
+        "Jorge, Alessandre Custódio",
+        "Rapini, Alessandro",
+        "Ribeiro, Aluísia",
+        "Sevilha, Anderson",
+        "Miranda, Aneliza",
+        "Silva, Carla",
+        "Dayrell, Carlos"
+            ],
+    "url": "http://dspace.jbrj.gov.br/jspui/handle/doc/41",
+    "espaco":{"nome":"Minas Gerais"},
+    "tempo": {"ano": "2015"}
+}
+
+POST /recursos/recurso/
+{
+    "tipo": "mapa",
+    "titulo": "Espécies Ameaçadas - Ponto - Livro Vermelho",
+    "autor": "CNCFLORA",
+    "url": "http://geonode.jbrj.gov.br/layers/geonode%3Apontos_ameacadas_atualizado_portaria_443_2014",
+    "tema": "Ocorrências"
 }
