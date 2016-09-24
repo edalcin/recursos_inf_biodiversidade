@@ -23,7 +23,7 @@ PUT recursos
         		"ano":  {"type": "integer"  }
         			}
         	    },	
-        "url":      {"type": "string", "index": "not_analyzed" }  
+        "url":      {"type": "string", "index": "no" }  
       }
     }
   }
