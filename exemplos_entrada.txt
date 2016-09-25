@@ -1,7 +1,8 @@
 ## Exemplos
 
-## Perfil de espécie em página da Internet
 POST /recursos/recurso/
+
+## Perfil de espécie em página da Internet
 {
     "tipo":  ["Perfil", "Documento"],
     "taxon": ["Vriesea altimontana","Bromeliaceae"],
@@ -10,7 +11,6 @@ POST /recursos/recurso/
 }
 
 ## Perfil de espécie em página da Internet
-POST /recursos/recurso
 {
     "tipo":  ["Perfil", "Documento"],
     "taxon": ["Vriesea monacorum", "Bromeliaceae"],
@@ -19,7 +19,6 @@ POST /recursos/recurso
 }
 
 ## Livro, artigo, documento
-POST /recursos/recurso/
 {
     "tipo": "Documento",
     "titulo": "Plano de Ação Nacional para a conservação da flora ameaçada de extinção da região de Grão Mogol Francisco Sá",
@@ -38,7 +37,6 @@ POST /recursos/recurso/
 }
 
 ## Mapa ou Shapefile
-POST /recursos/recurso/
 {
     "tipo": "mapa",
     "titulo": "Espécies Ameaçadas - Ponto - Livro Vermelho",
@@ -48,8 +46,6 @@ POST /recursos/recurso/
 }
 
 ## Tabela ou Banco de Dados
-
-POST /recursos/recurso
 {
     "tipo": "Tabela",
     "titulo": "Ocorrências - Livro Vermelho da Flora do Brasil - 2013",
@@ -61,7 +57,6 @@ POST /recursos/recurso
 
 
 ## Objeto de colelção científica
-POST /recursos/recurso
 {
     "tipo": "Exsicata",
     "autor": "E.C. Dalcin",
@@ -72,8 +67,6 @@ POST /recursos/recurso
 }
 
 ## Imagem
-
-POST /recursos/recurso
 {
     "tipo": "Imagem",
     "autor": "Eduardo Dalcin",
