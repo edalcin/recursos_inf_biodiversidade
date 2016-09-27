@@ -13,7 +13,7 @@ Este projeto se destina a:
 * Implementar uma ferramenta de busca integrada a estes recursos, com base na ferramena ElasticSearch, composta de:
   - [X] Servidor ElasticSearch
   - [ ] Formulário online para indexação de documentos
-  - [ ] Página de Busca "google like"
+  - [ ] Página de Busca "google like" (https://github.com/edalcin/FBI)
   - [ ] Interface com CKan
   - [ ] Interface com DSpace
   - [ ] Interface com IPT
