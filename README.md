@@ -16,7 +16,7 @@ Este projeto se destina a:
   - [ ] Página de Busca "google like" (https://github.com/edalcin/FBI)
   - [ ] Interface com CKan
   - [ ] Interface com DSpace
-  - [ ] Interface com IPT
+  - [ ] Interface com IPT (https://github.com/diogok/taxa-bot e https://github.com/diogok/dwc-bot-es)
   - [ ] Interface com Geonode
   - [ ] Interface com ResourceSpace
 
