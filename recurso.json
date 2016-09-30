@@ -5,22 +5,22 @@ PUT recursos
   "mappings": {
     "recurso": { 
       "properties": { 
-        "tipo":     {"type": "string"}, 
-        "titulo":   {"type": "string"}, 
-        "autor":    {"type": "string"},         
-        "desc":     {"type": "string"}, 
-        "taxon":    {"type": "string"}, 
-        "espaco":   { 
+        "type":         {"type": "string"}, 
+        "name":         {"type": "string"}, 
+        "author":       {"type": "string"},         
+        "description":  {"type": "string"}, 
+        "taxonCoverage":{"type": "string"}, 
+        "spatialCoverage":  { 
             "properties": 	{ 
-        		"nome": {"type": "string"  },
-        		"poli":  {"type": "geo_shape"  }
+        		"name" :    {"type": "string"  },
+        		"shape":    {"type": "geo_shape"  }
         			}
     		    }, 
-        "tema":     {"type": "string"},         
-        "tempo":    { 
+        "about":     {"type": "string"},         
+        "temporalCoverage":   { 
             	"properties": 	{ 
-        		"data": {"type": "date"  },
-        		"ano":  {"type": "integer"  }
+        		  "date": {"type": "date"  },
+        		  "year":  {"type": "integer"  }
         			}
         	    },	
         "url":      {"type": "string", "index": "no" }  
