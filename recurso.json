@@ -5,13 +5,13 @@ PUT recursos
   "mappings": {
     "recurso": { 
       "properties": { 
-        "type":         {"type": "string"}, 
+        "type":         {"type": "string", "index": "no" }, 
         "name":         {"type": "string"}, 
         "author":       {"type": "string"},         
         "description":  {"type": "string"}, 
         "taxonCoverage":{"type": "string"}, 
         "spatialCoverage":  { 
-            "properties": 	{ 
+            "properties":     { 
         		"name" :    {"type": "string"  },
         		"shape":    {"type": "geo_shape"  }
         			}
