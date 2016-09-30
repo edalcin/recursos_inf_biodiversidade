@@ -1,28 +1,10 @@
 ## Exemplos
 
 POST /recursos/recurso/
-
-## Perfil de espécie em página da Internet
 {
-    "tipo":  ["Perfil", "Documento"],
-    "taxon": ["Vriesea altimontana","Bromeliaceae"],
-    "espaco": {"nome": "Rio de Janeiro"},
-    "url": "http://servicos.jbrj.gov.br/flora/search/vriesea altimontana"
-}
-
-## Perfil de espécie em página da Internet
-{
-    "tipo":  ["Perfil", "Documento"],
-    "taxon": ["Vriesea monacorum", "Bromeliaceae"],
-    "espaco": {"nome": "Minas Gerais"},
-    "url": "http://cncflora.jbrj.gov.br/portal/pt-br/profile/Vriesea%20monacorum"
-}
-
-## Livro, artigo, documento
-{
-    "tipo": "Documento",
-    "titulo": "Plano de Ação Nacional para a conservação da flora ameaçada de extinção da região de Grão Mogol Francisco Sá",
-    "autor":[
+    "type": "Documento",
+    "name": "Plyear de Ação Nacional para a conservação da flora ameaçada de extinção da região de Grão Mogol Francisco Sá",
+    "author":[
         "Jorge, Alessandre Custódio",
         "Rapini, Alessandro",
         "Ribeiro, Aluísia",
@@ -32,47 +14,93 @@ POST /recursos/recurso/
         "Dayrell, Carlos"
             ],
     "url": "http://dspace.jbrj.gov.br/jspui/handle/doc/41",
-    "espaco":{"nome":"Minas Gerais"},
-    "tempo": {"ano": "2015"}
+    "spatialCoverage":{"name":"Minas Gerais"},
+    "temporalCoverage": {"year": "2015"}
 }
 
-## Mapa ou Shapefile
+POST /recursos/recurso/
 {
-    "tipo": "mapa",
-    "titulo": "Espécies Ameaçadas - Ponto - Livro Vermelho",
-    "autor": "CNCFLORA",
-    "url": "http://geonode.jbrj.gov.br/layers/geonode%3Apontos_ameacadas_atualizado_portaria_443_2014",
-    "tema": "Ocorrências"
+    "type":  ["Perfil", "Documento"],
+    "taxonCoverage": ["Vriesea monacorum", "Bromeliaceae"],
+    "spatialCoverage": {"name": "Minas Gerais"},
+    "url": "http://cncflora.jbrj.gov.br/portal/pt-br/profile/Vriesea%20monacorum"
 }
 
-## Tabela ou Banco de Dados
+POST /recursos/recurso/
 {
-    "tipo": "Tabela",
-    "titulo": "Ocorrências - Livro Vermelho da Flora do Brasil - 2013",
-    "autor": "CNCFLORA",
-    "url": "http://ckan.jbrj.gov.br/dataset/ocorrencias-livro-vermelho-2013",
-    "tema": "Ocorrência",
-    "tempo": {"ano": "2013"}
-}
-
-
-## Objeto de colelção científica
-{
-    "tipo": "Exsicata",
-    "autor": "E.C. Dalcin",
-    "taxon": ["Encholirium heloisae", "Dyckia heloisae","Encholirium sazimae", "Bromeliaceae"],
-    "espaco": {"nome": ["Minas Gerais", "Santana do Riacho"]},
-    "tempo": {"data": "1984-02-25"},
+    "type": "Exsicata",
+    "author": "E.C. Dalcin",
+    "taxonCoverage": ["Encholirium heloisae", "Dyckia heloisae","Encholirium sazimae", "Bromeliaceae"],
+    "spatialCoverage": {"name": "Minas Gerais"},
+    "temporalCoverage": {"data": "1984-02-25"},
     "url": "http://reflora.jbrj.gov.br/reflora/herbarioVirtual/ConsultaPublicoHVUC/ConsultaPublicoHVUC.do?idTestemunho=192721"
 }
 
-## Imagem
+POST /recursos/recurso/
 {
-    "tipo": "Imagem",
-    "autor": "Eduardo Dalcin",
-    "taxon": "Bromeliaceae",
-    "espaco": {"nome": ["Minas Gerais", "Serra do Cipó"]},
-    "tempo": {"data": "2013-10-15"},
+    "type":  ["Perfil", "Documento"],
+    "taxonCoverage": ["Vriesea altimontana","Bromeliaceae"],
+    "spatialCoverage": {"name": "Rio de Janeiro"},
+    "url": "http://servicos.jbrj.gov.br/flora/search/vriesea altimontana"
+}
+
+POST /recursos/recurso/
+{
+    "type": "mapa",
+    "name": "Espécies Ameaçadas - Ponto - Livro Vermelho",
+    "author": "CNCFLORA",
+    "url": "http://geonode.jbrj.gov.br/layers/geonode%3Apontos_ameacadas_atualizado_portaria_443_2014",
+    "about": "Ocorrências"
+}
+
+POST /recursos/recurso/
+{
+    "type": "Tabela",
+    "name": "Ocorrências - Livro Vermelho da Flora do Brasil - 2013",
+    "author": "CNCFLORA",
+    "url": "http://ckan.jbrj.gov.br/dataset/ocorrencias-livro-vermelho-2013",
+    "about": "Ocorrência",
+    "description": "O CNCFlora lançou o primeiro Livro Vermelho da Flora do Brasil (Martinelli e Moraes, 2013), publicação científica de avaliação do risco de extinção da flora brasileira. O trabalho considerou aspectos biológicos, ecológicos e ameaças que afetam a sobrevivência de 4.617 espécies na natureza. A lista de espécies ameaçadas desta publicação subsidiou a Lista Oficial de Espécies da Flora Brasileira Ameaçadas de Extinção. Neste recurso estão listadas todas as ocorrências botânicas utilizadas na avaliação do risco de extinção das espécies presentes no Livro Vermelho da Flora do Brasil-2013. As informações estão sujeitas à revisão no prazo de cinco years.",
+    "temporalCoverage": {"year": "2013"}
+}
+
+POST /recursos/recurso/
+{
+    "type": "Tabela",
+    "name": "Lista Nacional Oficial de Espécies da Flora Ameaçadas de Extinção (Portaria nº 443/2014)",
+    "author": "CNCFLORA",
+    "url": "http://ckan.jbrj.gov.br/dataset/portaria-n-443-2014",
+    "description": "Os dados referentes às espécies listadas aqui (2.113 espécies) é parte do conjunto de dados que subsidiou a Lista Nacional Oficial de Espécies da Flora Ameaçadas de Extinção (Portaria 443/2014). As avaliações foram feitas seguindo metologia IUCN (2001) e estarão sujeitas à revisão no prazo de cinco years. As avaliações de risco foram conduzidas durante o período de 2010 a 2012 e o resultado foi divulgado no primeiro Livro Vermelho da Flora do Brasil (Martinelli e Moraes, 2013)",
+    "temporalCoverage": {"year": "2014"}
+}
+
+POST /recursos/recurso/
+{
+    "type": "Tabela",
+    "name": "Espécies Ameaçadas da Flora em UCs Federais",
+    "author": "CNCFLORA",
+    "url": "http://ckan.jbrj.gov.br/dataset/ameacadas-em-ucs-federais",
+    "description": "Os dados aqui apresentados são o resultado de uma consulta espacial para identificar quais são as espécies ameaçadas de extinção da Flora do Brasil (segundo Portaria 443/2014), considerando registros de ocorrência (e não polígonos), que estão presentes em Unidades de Conservação da esfera federal (segundo shape de UC atualizado pelo ICMBio em maio de 2016). A consulta foi realizada em julho de 2016.",
+    "temporalCoverage": {"year": "2016"}
+}
+
+POST /recursos/recurso/
+{
+    "type": "Exsicata",
+    "author": "E.C. Dalcin",
+    "taxonCoverage": ["Encholirium heloisae", "Dyckia heloisae","Encholirium sazimae", "Bromeliaceae"],
+    "spatialCoverage": {"name": ["Minas Gerais", "Santana do Riacho"]},
+    "temporalCoverage": {"data": "1984-02-25"},
+    "url": "http://reflora.jbrj.gov.br/reflora/herbarioVirtual/ConsultaPublicoHVUC/ConsultaPublicoHVUC.do?idTestemunho=192721"
+}
+
+POST /recursos/recurso/
+{
+    "type": "Imagem",
+    "author": "Eduardo Dalcin",
+    "taxonCoverage": "Bromeliaceae",
+    "spatialCoverage": {"name": ["Minas Gerais", "Serra do Cipó"]},
+    "temporalCoverage": {"data": "2013-10-15"},
     "url": "http://dados.jbrj.gov.br/imagens/pages/view.php?ref=837&k=edff41f9fb",
-    "tema": "Flor"
+    "about": "Flor"
 }
