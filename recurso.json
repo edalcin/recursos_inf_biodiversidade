@@ -1,5 +1,6 @@
 ## Elasticsearch Mapping
-
+(baseado em http://schema.org/docs/full.html)
+ 
 PUT recursos 
 {
   "mappings": {
