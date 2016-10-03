@@ -3,6 +3,17 @@
  
 PUT recursos 
 {
+  "settings": {
+    "analysis": {
+        "analyzer": {
+            "br_std": {
+                "type": "standard",
+                "stopwords": "brazilian"
+            }
+        }
+    }
+  }, 
+  
   "mappings": {
     "recurso": { 
       "properties": { 
