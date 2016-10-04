@@ -3,6 +3,28 @@
 POST /recursos/recurso/
 {
     "type": "Documento",
+    "name": "Flora vascular de uma área de campo úmido em Analândia, estado de São Paulo",
+    "taxonCoverage": [
+        "Asteraceae", 
+        "Cyperaceae",
+        "Poaceae", 
+        "Melastomataceae",
+        "Xyridaceae", 
+        "Eriocaulaceae"        
+        ],    
+    "author":[
+        "Sousa, Naiara Lopes de",
+        "Lombardi, Julio Antonio"
+            ],
+    "url": "http://dspace.jbrj.gov.br/jspui/handle/doc/62",
+    "spatialCoverage": {"name": ["Analândia", "São Paulo"]},
+    "temporalCoverage": {"year": "2016"},
+    "description": "A fitofisionomia de campo úmido integra-se ao bioma Cerrado quando próximo a nascentes e cursos d’água, e em áreas com lençol freático superficial. Devido às condições edáficas particulares que restringem e selecionam as espécies, esse ambiente apresenta uma flora bastante típica. O presente estudo objetivou listar as espécies de plantas vasculares registradas em área de campo úmido situada na Fazenda Pedra Vermelha, município de Analândia, estado de São Paulo, e comparar os resultados com outros de áreas campestres alagadas no Brasil. A área amostrada possui 5ha e está situada entre as coordenadas 22\\º7\\’50\\”–8\\’1\\”S e 47\\º46\\’40\\”–53\\”O, a 760–770 m de altitude. Foram realizados 18 expedições mensais de coleta, registrando-se 178 espécies em 121 gêneros e 62 famílias. Asteraceae (19 espécies), Cyperaceae (15), Poaceae (14), Melastomataceae (13), Xyridaceae e Eriocaulaceae (8) mostraram-se mais diversas. Uma provável espécie nova para Cyperaceae foi diagnosticada e sete espécies encontram-se listadas como em risco de extinçã. A similaridade florística entre o campo úmido amostrado e as áreas usadas para comparação apresentou-se baixa. Os resultados obtidos comprovam uma riqueza florística significativa para o campo úmido da Fazenda Pedra Vermelha."
+}
+
+POST /recursos/recurso/
+{
+    "type": "Documento",
     "name": "Plano de Ação Nacional para a conservação da flora ameaçada de extinção da região de Grão Mogol Francisco Sá",
     "author":[
         "Jorge, Alessandre Custódio",
