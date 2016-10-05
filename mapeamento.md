@@ -4,13 +4,13 @@ Mapeamento das APIs das ferramentas para a estrutura do ElasticSearch.
 
 | Elastic  | DSpace | Ckan | ResourceSpace | Geonode | 
 | ------------- | ------------- | ------------- | ------------- | ------------- | 
-| name  | name  | name | field8  | title |
+| name  | name  | name | field8 | title |
 | author  |  |  |  |  |
 | description  | |  |  |  |
 | taxonCoverage  | |  |  |  |
 | spatialCoverage.name  |  |  |  |  |
-| about  | Content Cell  |  |  |  |
+| about  |  |  |  |  |
 | temporalCoverage.year  |  |  |  |  |
 | temporalCoverage.date  |  |  |  |  |
-| url  | Content Cell  |  |  |  |
+| url  |  |  |  |  |
 
