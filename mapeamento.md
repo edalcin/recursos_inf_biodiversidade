@@ -3,7 +3,7 @@
 Mapeamento das APIs das ferramentas para a estrutura do ElasticSearch.
 
 | Elastic  | DSpace | Ckan | ResourceSpace | Geonode | 
-| ------------- | ------------- | ------------- | ------------- | ------------- | 
+| ------------- | :---: | :---: | :---: | :---: | 
 | name  | name  | name | field8 | title |
 | author  |  |  |  |  |
 | description  | |  |  |  |
