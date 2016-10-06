@@ -10,7 +10,7 @@ Mapeamento das APIs das ferramentas para a estrutura do ElasticSearch.
 | taxonCoverage  | |  |  |  |
 | spatialCoverage.name  |  |  |  |  |
 | about  |  |  |  |  |
-| temporalCoverage.year  | dc.date.issued | created |  |  date |
-| temporalCoverage.date  | dc.date.available | created |  |  date |
+| temporalCoverage.year  | dc.date.issued | created | field12 |  date |
+| temporalCoverage.date  | dc.date.available | created | field12 |  date |
 | url  | dc.identifier.uri | url |  | distribution_url |
 
