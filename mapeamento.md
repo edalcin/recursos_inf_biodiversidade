@@ -6,10 +6,10 @@ Mapeamento das APIs das ferramentas para a estrutura do ElasticSearch.
 | ------------- | :---: | :---: | :---: | :---: | 
 | name  | name  | name | field8 | title |
 | author  | dc.contributor |  |  |  |
-| description  |dc.description.abstract |  |  | abstract |
+| [description[(http://schema.org/description)  | dc.description.abstract |  |  | abstract 
 | taxonCoverage  | |  |  |  |
-| spatialCoverage.name  |  |  |  |  |
-| about  |  |  |  |  |
+| spatialCoverage.name  | dc.coverage.spatial |  |  |  |
+| [keywords](http://schema.org/keywords)  |  |  |  |  |
 | temporalCoverage.year  | dc.date.issued | created | field12 |  date |
 | temporalCoverage.date  | dc.date.available | created | field12 |  date |
 | url  | dc.identifier.uri | url |  | distribution_url |
