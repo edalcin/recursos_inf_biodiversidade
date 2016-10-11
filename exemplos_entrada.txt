@@ -64,7 +64,7 @@ POST /recursos/recurso/
     "name": "Espécies Ameaçadas - Ponto - Livro Vermelho",
     "author": "CNCFLORA",
     "url": "http://geonode.jbrj.gov.br/layers/geonode%3Apontos_ameacadas_atualizado_portaria_443_2014",
-    "about": "Ocorrências"
+    "keywords": "Ocorrências"
 }
 
 POST /recursos/recurso/
@@ -73,7 +73,7 @@ POST /recursos/recurso/
     "name": "Ocorrências - Livro Vermelho da Flora do Brasil - 2013",
     "author": "CNCFLORA",
     "url": "http://ckan.jbrj.gov.br/dataset/ocorrencias-livro-vermelho-2013",
-    "about": "Ocorrência",
+    "keywords": "Ocorrências",
     "description": "O CNCFlora lançou o primeiro Livro Vermelho da Flora do Brasil (Martinelli e Moraes, 2013), publicação científica de avaliação do risco de extinção da flora brasileira. O trabalho considerou aspectos biológicos, ecológicos e ameaças que afetam a sobrevivência de 4.617 espécies na natureza. A lista de espécies ameaçadas desta publicação subsidiou a Lista Oficial de Espécies da Flora Brasileira Ameaçadas de Extinção. Neste recurso estão listadas todas as ocorrências botânicas utilizadas na avaliação do risco de extinção das espécies presentes no Livro Vermelho da Flora do Brasil-2013. As informações estão sujeitas à revisão no prazo de cinco years.",
     "temporalCoverage": {"year": "2013"}
 }
