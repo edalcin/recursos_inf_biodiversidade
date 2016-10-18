@@ -1,0 +1,54 @@
+PUT recursos 
+{
+    "settings": {
+        "analysis": {
+            "filter": {
+                "my_synonym_filter": {
+                    "type": "synonym", 
+                    "synonyms": [ 
+                    "bromélia,bromeliaceae",
+                    "altimontana,monacorum"
+                    ] 
+                }
+            },
+            "analyzer": {
+                "my_synonyms": {
+                    "tokenizer": "standard",
+                    "filter": [
+                    "lowercase",
+                    "my_synonym_filter" 
+                    ]
+                },
+                "br_std": {
+                "type": "standard",
+                "stopwords": "brazilian"
+                }
+            }
+        }, 
+        "mappings": {
+            "recurso": { 
+                "properties": { 
+                    "type":         {"type": "string", "index": "no" }, 
+                    "name":         {"type": "string"}, 
+                    "author":       {"type": "string"},         
+                    "description":  {"type": "string"}, 
+                    "taxonCoverage":{"type": "string", "index": "not_analyzed", "analyzer": "my_synonyms"}, 
+                    "spatialCoverage":  { 
+                        "properties":     { 
+                            "name" :    {"type": "string", "index": "not_analyzed", "analyzer": "brazilian"},
+                            "shape":    {"type": "geo_shape"  }
+                        }
+                    }, 
+                    "keywords":   {"type": "string", "index": "not_analyzed", "analyzer": "brazilian"},
+                    "temporalCoverage":   { 
+                        "properties":   { 
+                            "date": {"type": "date"  },
+                            "year": {"type": "integer"  }
+                        }
+                    },  
+                    "url":      {"type": "string", "index": "no" }  
+                }
+            }
+        }
+    }
+}
